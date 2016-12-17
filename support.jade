@@ -1,0 +1,66 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		title Support
+		link(rel="stylesheet" href="assets/styles/normalize.css")
+		link(rel="stylesheet" href="assets/styles/style.css")
+	body
+		// Header
+		header.support-page
+			include includes/nav
+				
+			#support
+				.container
+					h1 Support
+					form(action="form-handler.php" method="get")
+						input.search-query(type="text" name="query" placeholder="Enter your question...")
+		
+		main
+			.container
+				.flex
+					article.box-eight
+						h2 Download guide
+						p We’ve resurrected the iconic Aiwa brand in the passionate pursuit of bringing people together around music. We do this with a simple formula; creating amazing speakers that deliver the music you love, the way it was meant to be heard.
+						p We’re thrilled that you’ve chosen the Exos-9 to enhance your listening experience. Welcome to the Aiwa family.
+						a(href="#").btn Download guide for CS-M1
+						
+					article.box-four
+						h2 Firmware update
+						p Please enter your serial number to determine if a firmware upgrade is necessary.
+						p Serial numbers are 13 to 14 characters and begin with BTE9.
+						a(href="#").btn Download firmware
+				
+			.faq
+				.heading
+					h2 FAQ
+					
+				.container
+					.flex
+						aside.box-three
+							ul
+								li: a.faq-question(href="#faq-1"): span Can I use the CS-M1 to watch video or play games?
+								li: a.faq-question(href="#faq-2"): span How do I set up the CS-M1?
+								li: a.faq-question(href="#faq-3"): span What’s your warranty policy?
+								li: a.faq-question(href="#faq-4"): span Will the CS-M1 work with my phone or device?
+							
+						.box-nine
+							article#faq-1
+								h3 Can I use the CS-M1 to watch video or play games?
+								p Absolutely! The Exos-9 can deliver all the power and depth of a “true” 2.1 system in a single unit. Depending on your device, you may find that using the 3.5mm aux-in jack works best. This is because some devices create a small delay when streaming over Bluetooth, which can slightly throw off the viewing experience. Your mileage may vary, but using the aux-in jack can sometimes create a better viewing experience.
+							
+							article#faq-2
+								h3 How do I set up the CS-M1?
+								p All you need is something to play music from, the Exos-9, and maybe a wall outlet. Take the Exos-9 out of the box, plug it in, switch it on, and either pair your phone/tablet/PC with the Exos via Bluetooth, or plug an audio source into the Aux-in jack on the back. From there, enjoy the sound! It’s as easy as that, you should be up and running within a minute. 
+								p With a large, powerful, bass-reflex speaker like the Exos-9, where you put the speaker can affect the sound. If you place the Exos-9 near a wall or in a corner, the bass may increase. You can use the equalizer to adjust it if necessary.
+								
+							article#faq-3
+								h3 What’s your warranty policy?
+								p We offer a 1-year limited warranty. 
+								
+							article#faq-4
+								h3 Will the CS-M1 work with my phone or device?
+								p The CS-M1 will not work wirelessly with Bluetooth audio-compatible devices. It will work only with micro cassette tapes and AM/FM radio channels.
+								
+		
+		include includes/footer

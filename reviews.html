@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Reviews — Aiwa</title>
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+  </head>
+  <body>
+    <!-- Header-->
+    <header>
+      <div class="container">
+        <div class="logo"><a href="/" title="Go Home"><img src="assets/images/logo.png" alt="AIWA"></a></div>
+        <nav>
+          <ul>
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="buy.html">The CS-M1</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <form action="form-handler.php" method="post" class="form-review">
+        <h1>Add your review</h1>
+        <!-- Customer info-->
+        <fieldset>
+          <legend>Customer</legend>
+          <!-- Name-->
+          <label for="form-name">Your Name</label>
+          <input id="form-name" type="text" name="name" placeholder="Your name" required>
+          <!-- Email-->
+          <label for="form-email">Your Email</label>
+          <input id="form-email" type="email" name="email" placeholder="user@example.com" required>
+        </fieldset>
+        <!-- Rank-->
+        <fieldset>
+          <legend>Rate the product</legend>
+          <!-- 1-->
+          <div class="review-rate">
+            <label for="form-mark-1">1</label>
+            <input id="form-mark-1" type="radio" name="mark" value="1">
+          </div>
+          <!-- 2-->
+          <div class="review-rate">
+            <label for="form-mark-2">2</label>
+            <input id="form-mark-2" type="radio" name="mark" value="2">
+          </div>
+          <!-- 3-->
+          <div class="review-rate">
+            <label for="form-mark-3">3</label>
+            <input id="form-mark-3" type="radio" name="mark" value="3">
+          </div>
+          <!-- 4-->
+          <div class="review-rate">
+            <label for="form-mark-4">4</label>
+            <input id="form-mark-4" type="radio" name="mark" value="4">
+          </div>
+          <!-- 5-->
+          <div class="review-rate">
+            <label for="form-mark-5">5</label>
+            <input id="form-mark-5" type="radio" name="mark" value="5">
+          </div>
+        </fieldset>
+        <!-- Review text-->
+        <fieldset>
+          <legend>Write a review</legend>
+          <textarea name="review" placeholder="Start typing..." required></textarea>
+        </fieldset>
+        <!-- Submit-->
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <footer>
+      <div class="container">
+        <p>AIWA logo is property of AIWA Corporation. Photos by <a href="http://thngs.co">thngs.co</a>. Icons by <a href="http://icons8.com">Icons8.com</a>.</p>
+        <p>Designed and coded by Ernest Iliiasov #200336022 for COMP1002 class.</p>
+      </div>
+    </footer>
+    <script src="assets/scripts/main.js"></script>
+  </body>
+</html>

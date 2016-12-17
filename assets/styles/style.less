@@ -1,0 +1,445 @@
+// Fonts
+@font: 'Avenir';
+
+// Colors
+@yellow: #f6ff6c;
+@black: #000000;
+@blue: #44bce4;
+
+@nav-height: 60px;
+
+body {
+  font-family: @font;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a.btn {
+	display: inline-block;
+	text-decoration: none;
+	padding:  10px 30px;
+	background: @blue;
+	color: #fff;
+	border-radius: 100px;
+}
+
+// Navigation menu
+nav {
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		
+		li {
+			margin: 0;
+			display: inline-block;
+			
+			a {
+				padding: 5px 14px;
+				color: @black;
+				text-decoration: none;
+				line-height: @nav-height;
+				
+				font-size: 14px;
+				border-radius: 50px;
+			}
+		}
+	}
+}
+
+// Header
+header {
+
+	&.product-page {
+		background-color: @yellow;
+		background-image: url(../images/front.jpg);
+		background-position: 110% -80px;
+		background-size: 900px;
+		background-repeat: no-repeat;
+	}
+	
+	&.support-page {
+		background-color: @yellow;
+	}
+	
+	&.about-page {
+		background-color: @yellow;
+	}
+	
+	.logo {
+		float: left;
+		
+		a {
+			line-height: @nav-height;
+			display: block;
+		}
+		
+		img {
+			vertical-align: middle;
+			width: 95px;
+		}
+	}
+	nav {
+		text-align: right;
+		
+		a {
+			transition: all ease 0.25s;
+			&.active {
+				background-color: rgba(0, 0, 0, 0.12);
+			}
+			
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.05);
+			}
+		}
+	}
+}
+
+
+// Footer
+footer {
+	background-color: #fafafa;
+	padding: 20px 0;
+	text-align: center;
+	
+	font-size:  12px;
+	color: rgba(0,0,0,0.6);
+}
+
+
+// I tried to recreate a bootstrap's grid model using flexboxes
+.flex {
+	display: flex;
+	flex-flow: row wrap;
+	
+	margin: 0 -20px;
+	
+	.box-one,
+	.box-two,
+	.box-three,
+	.box-four,
+	.box-five,
+	.box-six,
+	.box-seven,
+	.box-eight,
+	.box-nine,
+	.box-ten,
+	.box-eleven,
+	.box-twelve {
+		box-sizing: border-box;
+		padding: 0 20px;
+	}
+	
+	.box-one {
+		width: 8.33333333%;
+	}
+	.box-two {
+		width: 16.66666667%;
+	}
+	.box-three {
+		width: 25%;
+	}
+	.box-four {
+		width: 33.3333333%;
+	}
+	.box-five {
+		width: 41.666666666%;
+	}
+	.box-six {
+		width: 50%;
+	}
+	.box-seven {
+		width: 58.3333333333%;
+	}
+	.box-eight {
+		width: 66.6666666666%;
+	}
+	.box-nine {
+		width: 75%;
+	}
+	.box-ten {
+		width: 83.3333333333%;
+	}
+	.box-eleven {
+		width: 91.6666666666%;
+	}
+	.box-twelve {
+		width: 100%;
+	}
+}
+
+article {
+	margin: 40px 0;
+	
+	h2 {
+		font-size: 25px;
+	}
+	
+	p {
+		font-size: 14px;
+		line-height: 1.6;
+	}
+}
+
+aside {
+	margin: 40px 0;
+}
+
+// Front page
+#front-product {
+	height: 500px;
+	
+	h1 {
+		padding-top: 140px;
+		font-size: 40px;
+		margin: 0;
+		line-height: 1.1;
+	}
+	
+	p {
+		font-size: 20px;
+		line-height: 1.6;
+	}
+}
+
+.front-top {
+	background: #f5f5f5 url('../images/purty_wood_@2X.png') repeat center center;
+	background-size: 400px;
+	//background: @yellow;
+	
+	height: 500px;
+	
+	img {
+		max-width: 100%;
+	}
+}
+
+
+// Support page
+#support {
+	h1 {
+		font-size: 40px;
+		text-align: center;
+	}
+	
+	form {
+		padding: 0 150px 50px;
+	}
+	
+	.search-query {
+		font-family: @font;
+		font-size: 20px;
+		
+		padding: 15px 30px;
+		box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+		
+		border: none;
+		width: 100%;
+	}
+}
+
+// FAQ block
+.faq {
+	.heading {
+		text-align: center;
+		height: 250px;
+		
+		background-color: #f6f6f6;
+		
+		h2 {
+			line-height: 250px;
+			font-size: 50px;
+		}
+	}
+	
+	aside {
+		margin: 30px 0;
+		
+		ul {
+			list-style-type: none;
+			margin: 0;
+			
+			li {
+				margin: 10px 0;
+				
+				a {
+					color: #ccc;
+					text-decoration: underline;
+					
+					&:hover {
+						text-decoration: none;
+						
+						span {
+							color: @blue;
+						}
+					}
+				}
+				
+				span {
+					color: #000;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	
+	article {
+		padding: 10px 20px;
+		transition: all ease 0.25s;
+	}
+	
+	// Highlighted answer style
+	article.highlighted {
+		background: rgba(255, 164, 0, 0.12);
+	}
+}
+
+
+// Reviews page
+
+// Reviews form
+.form-review {
+	width: 600px;
+	margin: 40px auto;
+	
+	// Fieldsets
+	fieldset {
+		padding: 20px;
+		
+		background: #fafafa;
+		border-radius: 4px;
+		border: none;
+		
+		legend {
+			font-weight: bold;
+			font-size: 16px;
+			
+			padding-top: 50px;
+		}	
+	}
+	
+	// Labels and inputs
+	
+	// label
+	label {
+		font-size: 14px;
+		padding: 5px 15px;
+		display: inline-block;
+		opacity: .6;
+	}
+	
+	// inputs
+	input {
+		
+		// text
+		&[type="text"],
+		&[type="email"] {
+			font-family: @font;
+			
+			padding: 10px 15px;
+			border-radius: 4px;
+			border: 1px solid #ccc;
+			
+			width: 100%;
+			box-sizing: border-box;
+			
+			margin-bottom: 15px;
+		}
+		
+		// Submit button
+		&[type="submit"] {
+			cursor: pointer;
+			font-family: @font;
+			
+			width:  100%;
+			background: #18d057;
+			color: #fff;
+			font-size: 16px;
+			
+			border: none;
+			padding: 15px;
+			border-radius: 100px;
+			
+			margin: 30px 0;
+		}
+	}
+	
+	textarea {
+		font-family: @font;
+		
+		padding: 10px 15px;
+		border-radius: 4px;
+		border: 1px solid #ccc;
+		
+		width: 100%;
+		box-sizing: border-box;
+		
+		height: 150px;
+	}
+	
+	// Review rate
+	.review-rate {
+		display: inline-block;
+		padding-right: 13px;
+		border-radius: 4px;
+		border: 1px solid #ccc;
+		
+		label {
+			margin: 0;
+			padding: 10px;
+			padding-right: 4px;
+			font-weight: bold;
+		}
+	}
+}
+
+
+// Product page
+.product-info {
+	padding: 30px 0;
+	background-color: @yellow;
+	background-image: url(../images/front.jpg);
+	background-position: center -80px;
+	background-size: 900px;
+	background-repeat: no-repeat;
+	
+	height: 450px;
+	
+	h1 {
+		text-align: center;
+	}
+	
+	img {
+		width: 100%;
+		margin-top: -100px;
+	}
+}
+
+.facts {
+	padding: 40px 0;
+	
+	p {
+		font-size: 14px;
+		line-height: 1.6;
+	}
+}
+
+
+// About page
+#about {
+	h1 {
+		font-size: 40px;
+		text-align: center;
+	}
+}
+

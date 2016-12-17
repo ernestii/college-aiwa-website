@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){for(var e=document.querySelectorAll("a.faq-question"),t=0;t<e.length;t++)e[t].onclick=function(e){var t=this.getAttribute("href"),n=document.querySelector(t);n.classList.add("highlighted"),setTimeout(function(){n.classList.remove("highlighted")},1500)}});

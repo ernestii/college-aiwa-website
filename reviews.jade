@@ -1,0 +1,68 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		title Reviews — Aiwa
+		link(rel="stylesheet" href="assets/styles/normalize.css")
+		link(rel="stylesheet" href="assets/styles/style.css")
+	body
+		// Header
+		header
+			include includes/nav
+		
+		.container
+			form.form-review(action="form-handler.php" method="post")
+				h1 Add your review
+				
+				// Customer info
+				fieldset
+					legend Customer
+				
+					// Name
+					label(for="form-name") Your Name
+					input#form-name(type="text" name="name" placeholder="Your name" required)
+					
+					// Email
+					label(for="form-email") Your Email
+					input#form-email(type="email" name="email" placeholder="user@example.com" required)
+				
+				// Rank
+				fieldset
+					legend Rate the product
+				
+					// 1
+					.review-rate
+						label(for="form-mark-1") 1
+						input#form-mark-1(type="radio" name="mark" value="1")
+					
+					// 2
+					.review-rate
+						label(for="form-mark-2") 2
+						input#form-mark-2(type="radio" name="mark" value="2")
+					
+					// 3
+					.review-rate
+						label(for="form-mark-3") 3
+						input#form-mark-3(type="radio" name="mark" value="3")
+					
+					// 4
+					.review-rate
+						label(for="form-mark-4") 4
+						input#form-mark-4(type="radio" name="mark" value="4")
+					
+					// 5
+					.review-rate
+						label(for="form-mark-5") 5
+						input#form-mark-5(type="radio" name="mark" value="5")
+				
+				// Review text
+				fieldset
+					legend Write a review
+					
+					textarea(name="review" placeholder="Start typing..." required)
+				
+				
+				// Submit
+				input(type="submit" value="Submit")
+				
+		include includes/footer

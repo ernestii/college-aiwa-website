@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		title AIWA
+		link(rel="stylesheet" href="assets/styles/normalize.css")
+		link(rel="stylesheet" href="assets/styles/style.css")
+	body
+		// Header
+		header.product-page
+			include includes/nav
+				
+			#front-product
+				.container
+					h1 Compact stereo<br> reinvented
+					p Smallest micro cassette and radio player.<br> Meet the new Aiwa CS-M1.
+					a.btn(href="buy.html") Buy Now for $199
+					
+		// Info about the product
+		.facts
+			.container
+				h1 Aiwa CS-M1
+				.flex
+					.box-four
+						h2 Compact size
+						p With dimensions 420 × 76 × 147mm and 2kg weight, Aiwa CS-M1 is a compact and powerful solution for those who needs compact stereo.
+						
+					.box-four
+						h2 Micro cassette
+						p The Aiwa CS-M1 has a micro cassette frequency range of 80 to 10,000 Hz with metal tape, 80 to 8,000 Hz with normal tape.
+						
+					.box-four
+						h2 Tape and radio
+						p Aiwa is offering a portable radio and tape combination. Device have built-in stereo amplifier and speakers and offer two short-wave bands, as well as AM and FM reception.
+					
+		include includes/footer
