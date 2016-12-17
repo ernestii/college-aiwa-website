@@ -162,6 +162,12 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/check.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/check.php",
+		"oF": 0
+		},
 	"\/includes\/footer.jade": {
 		"cOD": 1,
 		"ft": 512,
@@ -243,12 +249,6 @@
 		"oAP": "\/support.html",
 		"oF": 0,
 		"oS": 0
-		},
-	"\/untitled.txt": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/untitled.txt",
-		"oF": 0
 		}
 	},
 "hooks": [
