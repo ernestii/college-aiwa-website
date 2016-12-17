@@ -168,20 +168,6 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/includes\/nav.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/includes\/nav.html",
-		"oF": 0
-		},
-	"\/includes\/nav.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/includes\/nav.html",
-		"oF": 0,
-		"oS": 0
-		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,

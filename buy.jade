@@ -8,7 +8,16 @@ html(lang="en")
 	body
 		// Header
 		header
-			include includes/nav
+			.container
+				.logo
+					a(href="/" title="Go Home"): img(src="assets/images/logo.png" alt="Aiwa")
+				nav
+					ul
+						li: a(href="/") Home
+						li: a.active(href="buy.html") The CS-M1
+						li: a(href="reviews.html") Reviews
+						li: a(href="support.html") Support
+						li: a(href="about.html") About
 		
 		
 		// Heading and a big photo
