@@ -19,6 +19,7 @@ a.btn {
   color: #fff;
   border-radius: 100px;
 }
+/* Navigation menu */
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -36,6 +37,7 @@ nav ul li a {
   font-size: 14px;
   border-radius: 50px;
 }
+/* Header */
 header.product-page {
   background-color: #f6ff6c;
   background-image: url(../images/front.jpg);
@@ -72,6 +74,7 @@ header nav a.active {
 header nav a:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
+/* Footer */
 footer {
   background-color: #fafafa;
   padding: 20px 0;
@@ -79,6 +82,7 @@ footer {
   font-size: 12px;
   color: rgba(0, 0, 0, 0.6);
 }
+/* I tried to recreate a bootstrap's grid model using flexboxes */
 .flex {
   display: flex;
   flex-flow: row wrap;
@@ -148,6 +152,7 @@ article p {
 aside {
   margin: 40px 0;
 }
+/* Front page */
 #front-product {
   height: 500px;
 }
@@ -169,6 +174,7 @@ aside {
 .front-top img {
   max-width: 100%;
 }
+/* Support page */
 #support h1 {
   font-size: 40px;
   text-align: center;
@@ -183,6 +189,10 @@ aside {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   border: none;
   width: 100%;
+}
+/* FAQ block */
+.faq {
+  /* Highlighted answer style */
 }
 .faq .heading {
   text-align: center;
@@ -224,9 +234,16 @@ aside {
 .faq article.highlighted {
   background: rgba(255, 164, 0, 0.12);
 }
+/* Reviews page */
+/* Reviews form */
 .form-review {
   width: 600px;
   margin: 40px auto;
+  /* Fieldsets */
+  /* Labels and inputs */
+  /* label */
+  /* inputs */
+  /* Review rate */
 }
 .form-review fieldset {
   padding: 20px;
@@ -244,6 +261,10 @@ aside {
   padding: 5px 15px;
   display: inline-block;
   opacity: .6;
+}
+.form-review input {
+  /* text */
+  /* Submit button */
 }
 .form-review input[type="text"],
 .form-review input[type="email"] {
@@ -288,6 +309,7 @@ aside {
   padding-right: 4px;
   font-weight: bold;
 }
+/* Product page */
 .product-info {
   padding: 30px 0;
   background-color: #f6ff6c;
@@ -311,6 +333,7 @@ aside {
   font-size: 14px;
   line-height: 1.6;
 }
+/* About page */
 #about h1 {
   font-size: 40px;
   text-align: center;
