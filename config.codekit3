@@ -37,17 +37,9 @@
 		"oAP": "\/assets\/images\/front.psd",
 		"oF": 0
 		},
-	"\/assets\/images\/logo.png": {
-		"ft": 32768,
-		"iS": 48096,
-		"oA": 0,
-		"oAP": "\/assets\/images\/logo.png",
-		"oF": 0,
-		"opt": 1
-		},
 	"\/assets\/images\/purty_wood_@2X.png": {
 		"ft": 32768,
-		"iS": 318459,
+		"iS": 215599,
 		"oA": 0,
 		"oAP": "\/assets\/images\/purty_wood_@2X.png",
 		"oF": 0,
@@ -63,11 +55,11 @@
 		},
 	"\/assets\/images\/top.png": {
 		"ft": 32768,
-		"iS": 247325,
+		"iS": 246429,
 		"oA": 0,
 		"oAP": "\/assets\/images\/top.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/assets\/scripts\/main-min.js": {
 		"ft": 64,
