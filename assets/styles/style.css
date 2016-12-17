@@ -315,4 +315,12 @@ aside {
   font-size: 40px;
   text-align: center;
 }
+.about-logo {
+  background: #f6ff6c;
+  line-height: 300px;
+  text-align: center;
+}
+.about-logo img {
+  width: 95px;
+}
 /*# sourceMappingURL=style.css.map */

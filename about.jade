@@ -2,7 +2,7 @@ doctype html
 html(lang="en")
 	head
 		meta(charset="utf-8")
-		title Support
+		title About us — Aiwa
 		link(rel="stylesheet" href="assets/styles/normalize.css")
 		link(rel="stylesheet" href="assets/styles/style.css")
 	body
@@ -10,13 +10,18 @@ html(lang="en")
 		header
 			include includes/nav
 		
+		.about-logo
+			img(src="assets/images/logo.png" alt="Aiwa")
+		
 		main
 			.container
-				article
-					h2 AIWA is the leader in HiFi products
-					p Aiwa has a simple formula for delivering serious audio equipment without compromise - we have the best acoustic talent and we put our money into the components that deliver the best sound, instead of the marketing of that equipment.
-					
-					p Aiwa is for those that want music to be more than background noise, for those who want the music to have the power to entertain.
+				.flex
+					.box-three
+					article.box-six
+						h1 About us
+						p Aiwa has a simple formula for delivering serious audio equipment without compromise - we have the best acoustic talent and we put our money into the components that deliver the best sound, instead of the marketing of that equipment.
+						
+						p Aiwa is for those that want music to be more than background noise, for those who want the music to have the power to entertain.
 		
 		
 		include includes/footer
