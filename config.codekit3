@@ -162,10 +162,10 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/check.php": {
+	"\/form-handler.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/check.php",
+		"oAP": "\/form-handler.php",
 		"oF": 0
 		},
 	"\/includes\/footer.jade": {
